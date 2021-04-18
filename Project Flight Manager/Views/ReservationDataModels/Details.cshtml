@@ -1,0 +1,74 @@
+﻿@model Project_Flight_Manager.ViewModels.Reservations.ReservationDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    .content{
+        color:white;
+        background-color: rgba(163, 167, 204, 0.2);
+        padding: 10px;
+        }
+</style>
+<div class="content">
+<h1>Details</h1>
+
+<div>
+    <h4>Reservation Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            First Name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FirstName
+        </dd>
+        <dt class="col-sm-2">
+            Middle Name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.MiddleName
+        </dd>
+        <dt class="col-sm-2">
+            Last Name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LastName
+        </dd>
+        <dt class="col-sm-2">
+            EGN
+        </dt>
+        <dd class="col-sm-10">
+            @Model.EGN
+        </dd>
+        <dt class="col-sm-2">
+            Telephone Number
+        </dt>
+        <dd class="col-sm-10">
+            @Model.TelNumber
+        </dd>
+        <dt class="col-sm-2">
+            Nationality
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Nationality
+        </dd>
+        <dt class="col-sm-2">
+            Ticket Type
+        </dt>
+        <dd class="col-sm-10">
+            @Model.TicketType
+        </dd>
+        <dt class="col-sm-2">
+            Airlines Name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FlightName
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+</div>
